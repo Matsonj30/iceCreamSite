@@ -7,8 +7,7 @@
     --lightblack: #1C1C1C;
     --yellow:#F9DC5C;
     --skinnyFont: 'Amatic SC', cursive;
-    --meltFont:'Nosifer', cursive;
-    --boldFont:'Permanent Marker', cursive;
+    --boldFont: 'Alfa Slab One', cursive;
 }
 *{
     margin: 0;
@@ -18,6 +17,10 @@ body{
     background: rgb(109,211,206);
     background: linear-gradient(218deg, rgba(109,211,206,1) 0%, rgba(200,233,160,1) 50%, rgba(255,77,128,1) 100%);
     background-attachment: fixed;
+}
+.center{
+    display: flex;
+    justify-content: center;
 }
 .header{
    
@@ -30,7 +33,7 @@ body{
    
 }
 .header img{
-    height: 100%;
+    height: 95%;
 }
 .headerButton{
     border: 2px solid var(--brightPink);
@@ -49,10 +52,49 @@ body{
     box-shadow: inset 0 0 0 2em var(--brightPink);
     color: white
 }
-.menu{
+
+.MapAndHours{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 500px;
     display: flex;
-    width: 100%;
-    height: 1000px;
     justify-content: center;
-    margin-top: 500px;
+    
+}
+.map{
+   /*  border: 3px solid var(--lightBlue); */
+    line-height: 0px;
+    width: 50%;
+    border-right: none;
+}
+iframe{
+    width: 100%;
+}
+.hoursTitle{
+    text-align: center;
+}
+.hours{
+    align-items: center;
+    width: 30%;
+   display: flex;
+    justify-content: space-around;
+  /*   border: 3px solid var(--lightBlue); */
+    border-left: none;
+}
+.hours li{
+    list-style: none;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--skinnyFont);
+}
+
+.hoursTitle{
+    font-size:35px;
+    font-family: var(--boldFont);
+}
+
+
+.instaPosts{
+    display: flex;
+    height: 700px;
 }
