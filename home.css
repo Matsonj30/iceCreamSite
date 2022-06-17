@@ -8,6 +8,7 @@
     --yellow:#F9DC5C;
     --skinnyFont: 'Amatic SC', cursive;
     --boldFont: 'Alfa Slab One', cursive;
+    --boldrFont: 'Fjalla One', sans-serif;
 }
 *{
     margin: 0;
@@ -18,9 +19,17 @@ body{
     background: linear-gradient(218deg, rgba(109,211,206,1) 0%, rgba(200,233,160,1) 50%, rgba(255,77,128,1) 100%);
     background-attachment: fixed;
 }
+h3{
+    font-size: 30px;
+    font-family: var(--boldrFont);
+}
 .center{
     display: flex;
     justify-content: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
 }
 .header{
    
@@ -54,9 +63,8 @@ body{
 }
 
 .MapAndHours{
-    width: 90%;
+    width: min(70%,1300px);
     margin-top: 10px;
-    margin-bottom: 500px;
     display: flex;
     justify-content: center;
     
@@ -70,12 +78,18 @@ body{
 iframe{
     width: 100%;
 }
-.hoursTitle{
+
+.titleDiv{
     text-align: center;
-}
+    width: 50%;
+ }
+ #clock{
+    width: 30px;
+    height: 30px;
+ }
 .hours{
     align-items: center;
-    width: 30%;
+    width: max(100%,365px);
    display: flex;
     justify-content: space-around;
   /*   border: 3px solid var(--lightBlue); */
@@ -87,14 +101,81 @@ iframe{
     font-weight: bold;
     font-family: var(--skinnyFont);
 }
-
-.hoursTitle{
-    font-size:35px;
-    font-family: var(--boldFont);
+.pictureAndDetails{
+    width: min(70%,1300px);
+    display: flex;
+}
+.connectWithUs{
+    width: 50%;
+}
+#icecreamImage{
+    width: 50%;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--skinnyFont);
+    font-size: 35px;
+    font-weight: bold;
 }
 
+.fa{
+    min-width: 50px;
+    max-width: 50px;
+    height: 55px;
+    padding: 20px;
+    padding-top: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.fa-twitter{
+    background: rgb(0, 195, 255);
+}
+.fa-facebook{
+    background: rgb(2, 80, 226);
+}
+.fa-instagram{
+    background: rgb(255, 0, 200);
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.fa::before{
+    font-size: 60px;
+}
+.phone{
+    width: 90px;
+    height: 83px;
+    background-color: rgba(255, 255, 0, 0.61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone img{
+   
+    width: 90px;
+    height: 90px;
+}
+.email{
+
+    width: 90px;
+    height: 83px;
+    background-color: rgba(135, 26, 224, 0.836);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email img{
+    height: 80px;
+}
 
 .instaPosts{
     display: flex;
     height: 700px;
+}
+.text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
